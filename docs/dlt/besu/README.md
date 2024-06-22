@@ -39,9 +39,9 @@ After verifying and installing the prerequisites we can proceed with the step by
 #### Besu Installation and Configuration
 ##### Step 1: Download Hyperledger Besu
 - This command uses wget to download the specified version of Hyperledger Besu from its official GitHub releases page. 
- ```
+```
  wget https://github.com/hyperledger/besu/releases/download/24.5.2/besu-24.5.2.tar.gz
- ```besu –version 
+ ```
 - Extracting the tar file
  ```
  tar -xzf besu-24.5.2.tar.gz  
@@ -65,7 +65,7 @@ echo 'export PATH=$PATH:$(pwd)/bin' >> ~/.bashrc
 echo 'export PATH=$PATH:$(pwd)/bin' >> ~/.bashrc  
  ```
 ##### Step 4: Verifing the installantion
--Running besu --version verifies that Besu is installed correctly and accessible in your terminal. 
+- Running besu --version verifies that Besu is installed correctly and accessible in your terminal. 
  ```
 besu –version 
  ```
