@@ -62,7 +62,7 @@ echo 'export PATH=$PATH:$(pwd)/bin' >> ~/.bashrc
  ```
 - The source ~/.bashrc command reloads the ~/.bashrc file to apply the PATH changes immediately.
  ```
-echo 'export PATH=$PATH:$(pwd)/bin' >> ~/.bashrc  
+source ~/.bashrc  
  ```
 ##### Step 4: Verifing the installantion
 - Running besu --version verifies that Besu is installed correctly and accessible in your terminal. 
