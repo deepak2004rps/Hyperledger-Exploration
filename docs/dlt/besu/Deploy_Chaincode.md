@@ -29,6 +29,10 @@ mkdir MyContract
 cd MyContract
 truffle init
 ```
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/truffle_init.png" alt="truffle_init" width="900" />
+</p>
+
 ## Step 3: Write Your Smart Contract
 Create a new Solidity file in the contracts directory, e.g., ```MyContract.sol```
 ```
@@ -89,9 +93,22 @@ Deploy your contract to the network:
 ```
 truffle migrate --network development
 ```
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/truffle_deploy.png" alt="truffle_deploy" width="1000" />
+</p>
+
 ## Step 7: Interact with the Smart Contract
 You can interact with your deployed contract using Truffle console:
 ```
 truffle console --network development
 ```
 In the console, you can interact with your contract
+- Deploying while the Node is online
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/truffle_success.png" alt="truffle_success" width="950" />
+</p>
+
+- Deploying while the Node is offline
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/truffle_failure.png" alt="truffle_failure" width="950" />
+</p>
