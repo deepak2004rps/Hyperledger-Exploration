@@ -3,7 +3,7 @@
 
 ## Hyperledger Besu
 ![](https://img.shields.io/badge/Exploration_By-B_Vijay_Nishanth-gold)  <br/>
-![](https://img.shields.io/badge/Start-May-silver) ![](https://img.shields.io/badge/End-June-silver) 
+![](https://img.shields.io/badge/Start-May-silver) ![](https://img.shields.io/badge/End-July-silver) 
 
  <p align="center"><img src="../../logos/Hyperledger_Besu.jpg" width=320> </p>
 
@@ -71,8 +71,9 @@ besu –version
  ```
 
 ### Running the Network
+- [Private Network using IBFT2.0](Deploy_Network.md)
 
 ### Deploying the Smart Contracts
-
+- [Solidity Smart Contract to Private Network](Deploy_Chaincode.md)
 ### References
  - [Hyperledger Besu Documentation](https://besu.hyperledger.org/)
