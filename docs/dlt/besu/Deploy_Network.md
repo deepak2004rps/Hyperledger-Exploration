@@ -86,7 +86,11 @@ In the IBFT-Network directory, generate the node key and genesis file using the 
 ```
 besu operator generate-blockchain-config --config-file=ibftConfigFile.json --to=networkFiles --private-key-file-name=key
 ```
-This command will generate the public and the private key for the no of nodes given in the ibftConfigFile.json
+This command will generate the public and the private key for the no of nodes given in the ```ibftConfigFile.json```
+
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/keypair_genesis.png" alt="keypair_genesis" width="1600" />
+</p>
 
 ### Step 4: Copy the Genesis File to the IBFT-Network Directory
 Copy the ```genesis.json``` file to the IBFT-Network directory.
@@ -116,12 +120,20 @@ IBFT-Network/
 │   │   ├── key
 │   │   ├── key.pub
 ```
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/directory_structure.png" alt="directory_structure" width="500" />
+</p>
+
 
 ### Step 6: Start the First Node as the Bootnode
 In the Node-1 directory, start Node-1:
 ```
 besu --data-path=data --genesis-file=../genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,IBFT --host-allowlist="*" --rpc-http-cors-origins="all"
 ```
+<p align="center">
+    <img src="/docs/images/besu/private-network/IBFT/enode_url.png" alt="enode_url" width="1500" />
+</p>
+
 ### Step 7: Start Node-2, Node-3, Node-4
 Start another terminal, change to the corresponding Node directory and start the corresponding Node specifying the Node-1 enode URL copied when starting Node-1 as the bootnode:
 - Node-2
